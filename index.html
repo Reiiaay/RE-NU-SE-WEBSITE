@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RE:NU:SE | NU MOA Repository</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-bg"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-main">RE:NU:SE</span>
+      <span class="brand-sub">R E P O S I T O R Y</span>
+    </a>
+    <nav>
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="history.html">History</a>
+    </nav>
+  </header>
+
+  <main class="home-page">
+    <section class="hero">
+      <p class="welcome">WELCOME TO <span>NU MOA</span></p>
+      <h1>RE:NU:SE</h1>
+      <div class="hero-panel">
+        <div class="gold-line"></div>
+        <p>Your gateway to academic excellence at National University MOA.<br>
+          Explore, collaborate, and contribute to a growing body of research.</p>
+      </div>
+
+      <form class="search-box" id="searchForm">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search publications, authors, keywords..." aria-label="Search repository">
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#repository" id="exploreBtn">
+          <span class="btn-icon">▥</span> Explore repository
+        </a>
+        <a class="btn btn-outline" href="about.html">
+          <span class="btn-icon">ⓘ</span> About the repository
+        </a>
+      </div>
+
+      <div class="assistant">
+        <div class="assistant-bubble">
+          <strong>Welcome to RE:NU:SE!</strong>
+          <span>Need help finding research?</span>
+        </div>
+        <div class="assistant-avatar">B<span>Jr.</span></div>
+      </div>
+    </section>
+
+    <section class="repository-section" id="repository">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NU MOA RESEARCH OUTPUTS</p>
+          <h2>Explore the Repository</h2>
+        </div>
+        <p id="resultMessage">Browse a growing body of student research.</p>
+      </div>
+
+      <div class="research-grid" id="researchGrid">
+        <article class="research-card" data-search="web based knowledge management repository system research">
+          <span class="research-tag">Featured Research</span>
+          <h3>Web-based Knowledge Management Repository System</h3>
+          <p>A student research project focused on preserving, organizing, and making academic research easier to discover and access.</p>
+          <div class="card-footer">
+            <span>By Group 2 Da Goats</span>
+            <a href="#" class="read-link" data-title="Web-based Knowledge Management Repository System">Read full paper →</a>
+          </div>
+        </article>
+
+        <article class="research-card" data-search="research output template">
+          <span class="research-tag">Research Output</span>
+          <h3>Sample Repository Publication</h3>
+          <p>Use this card as a template for future research outputs, including title, authors, abstract, keywords, and full-paper access.</p>
+          <div class="card-footer">
+            <span>Author / Research Group</span>
+            <a href="#" class="read-link" data-title="Sample Repository Publication">Read full paper →</a>
+          </div>
+        </article>
+
+        <article class="research-card" data-search="student research innovation academic">
+          <span class="research-tag">New Entry</span>
+          <h3>Student Research & Innovation</h3>
+          <p>A placeholder publication showing how additional research entries can be displayed in the repository.</p>
+          <div class="card-footer">
+            <span>Author / Research Group</span>
+            <a href="#" class="read-link" data-title="Student Research & Innovation">Read full paper →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>RE:NU:SE</strong>
+      <span>National University — Mall of Asia</span>
+    </div>
+    <span>All Rights Reserved.</span>
+  </footer>
+
+  <div class="modal" id="paperModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <p class="eyebrow">FULL PAPER</p>
+      <h2 id="modalTitle">Research Paper</h2>
+      <p>This is a placeholder viewer. Replace this section with the URL or PDF file for the corresponding repository paper.</p>
+      <a class="btn btn-solid" href="#" id="paperLink">Open full paper</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
